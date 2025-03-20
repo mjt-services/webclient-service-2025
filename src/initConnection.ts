@@ -4,7 +4,7 @@ import type { Env } from "./Env";
 import { assertValue } from "@mjt-engine/assert";
 import type { WebclientConnectionMap } from "@mjt-services/webclient-common-2025";
 import { getEnv } from "./getEnv";
-import { webclientScrapeListener } from "./listener/webclientScrapeListener";
+import { webclientExecListener } from "./listener/webclientExecListener";
 
 export const initConnection = async () => {
   const env = getEnv();
@@ -13,7 +13,7 @@ export const initConnection = async () => {
 
   const con = await Messages.createConnection<WebclientConnectionMap, Env>({
     subscribers: {
-      "webclient.scrape": webclientScrapeListener,
+      "webclient.exec": webclientExecListener,
     },
     options: { log: console.log },
     server: [url],

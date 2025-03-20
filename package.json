@@ -1,5 +1,5 @@
 {
-  "name": "@mjt-services/webclient-service-frontend-2025",
+  "name": "@mjt-services/webclient-service-2025",
   "version": "2025.1.14-1121",
   "sideEffects": false,
   "description": "webclient service",
@@ -30,7 +30,10 @@
     "@mjt-engine/message": "github:mjt-engine/message",
     "@mjt-engine/object": "github:mjt-engine/object",
     "@mjt-engine/parse": "github:mjt-engine/parse",
-    "@mjt-services/webclient-common-2025": "github:mjt-services/webclient-common-2025"
+    "@mjt-services/webclient-common-2025": "github:mjt-services/webclient-common-2025",
+    "@types/turndown": "^5.0.5",
+    "playwright": "^1.51.1",
+    "turndown": "^7.2.0"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
